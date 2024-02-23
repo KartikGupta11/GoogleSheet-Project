@@ -26,7 +26,7 @@ app.get("/api/data", async (req, res) => {
     });
     const rows = response.data.values;
     console.log(response.data);
-    // Skip header row
+   
     res.json(rows);
   } catch (error) {
     console.error("Error fetching data:", error);
